@@ -3,7 +3,7 @@ Resource  ../Resources/TestCase_Input/IndividualTC_Input.robot
 Resource  ../Resources/IndividualPages/#000_All_Variables.robot
 #Resource  ../Resources/IndividualPages/00_LoginPage.robot
 #Resource  ../Resources/IndividualPages/01_TopMenuBar.robot
-#Resource  ../Resources/IndividualPages/02_LeftSideMenu.robot
+#Resource  ../Resources/IndividualPages/02_LeftHamburger.robot
 #Resource  ../Resources/IndividualPages/01_CensusCapture.robot
 #Resource  ../Resources/IndividualPages/02_PlanListing.robot
 #Resource  ../Resources/IndividualPages/03_CartReview.robot
