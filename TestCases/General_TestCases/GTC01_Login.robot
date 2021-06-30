@@ -8,6 +8,6 @@ Verify Login function in BA ${Test_Environment} environment
     [Documentation]  This Test Case verifies the Login Functionality in the specified Test Environment
     [Tags]  Functional
 
-    Start TestCase Execution
+    Start Test Execution
     Perform Userlogin
-    Finish TestCase Execution
+    Finish Test Execution

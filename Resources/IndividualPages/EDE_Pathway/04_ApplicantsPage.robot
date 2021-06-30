@@ -6,13 +6,13 @@ Library  BuiltIn
 Test Timeout  7s
 
 *** Variables ***
-#################### 04_ApplicantsPage ####################
-${AP_Add Another Member}                    //a[contains(.,'Add Another Person')]
-${AP_First Applicant FirstName}             //input[contains(@name,'OtherApplicants[0].FirstName')]
-${AP_First Applicant MiddleName}            //input[contains(@name,'OtherApplicants[0].MiddleName')]
-${AP_First Applicant LastName}              //input[contains(@name,'OtherApplicants[0].LastName')]
-${AP_First Applicant Gender}                (//input[contains(@class,'dropdown')])[3]
-${AP_First Applicant DOB}                   //input[contains(@name,'OtherApplicants[0].DateOfBirth')]
+######################################## Main Xpath ########################################
+${Applicants_Add Another Member}                    //a[contains(.,'Add Another Person')]
+${Applicants_First Applicant FirstName}             //input[contains(@name,'OtherApplicants[0].FirstName')]
+${Applicants_First Applicant MiddleName}            //input[contains(@name,'OtherApplicants[0].MiddleName')]
+${Applicants_First Applicant LastName}              //input[contains(@name,'OtherApplicants[0].LastName')]
+${Applicants_First Applicant Gender}                (//input[contains(@class,'dropdown')])[3]
+${Applicants_First Applicant DOB}                   //input[contains(@name,'OtherApplicants[0].DateOfBirth')]
 
 
 

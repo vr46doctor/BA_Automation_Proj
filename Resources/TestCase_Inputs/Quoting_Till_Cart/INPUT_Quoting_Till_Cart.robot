@@ -10,6 +10,7 @@ ${Test_URL}                             https://shop-qa.benefitalign.com/brokere
 ${Login_Username}                       edeagency1
 ${Login_Password}                       Test1234
 ######################################## Quoting ########################################
+${Input_LOB_Quoting}                    Health
 ${Input_Zipcode}                        33321
 ${Input_City}                           Fort Lauderdale
 ${Input_ApplicantGender}                M

@@ -13,13 +13,13 @@ Verify Multi City Zipcode Quoting flow for 1 member Household and Download Propo
     [Timeout]  7s
 
 QTC05.1 Environment Accessibility
-    Start TestCase Execution
+    Start Test Execution
 
 QTC05.2 Environment Login
     Perform Userlogin
 
 QTC05.3 Quoting - Health
-    Quick Quoting on Health LOB
+    Quick Quoting on the selected LOB
 
 QTC05.4 Quoting - Census
     Census Capture - Zipcode & City

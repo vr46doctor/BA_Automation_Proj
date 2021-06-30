@@ -19,12 +19,13 @@ ${Input_Customer Gender}                                               M
 ${Input_Customer Email}
 ${Input_Customer Phone}                                                5554446633
 ${Input_Customer PhoneType}                                            Home
-${Input_Communication Mode}                                            Go Paperless     #Send me paper notices in the mail
+${Input_Communication Mode}                                            Go Paperless
+#${Input_Communication Mode}                                            Send me paper notices in the mail
 ${Input_Customer Written Language}                                     English
 ${Input_Customer Spoken Language}                                      English
 ${Input_Customer Home Address}                                         GeorgeQA Mansion
 ${Input_Customer Home Address Zipcode}                                 33325
 ${Input_Customer Home Address City}                                    Fort Lauderdale
-${Input_Is mailing addr same as home addr?}                            Yes
+${Input_Is mailing address same as home address?}                      Yes
 ${Input_Does Primary Contact need health coverage}                     Yes
 ${Input_Financial Assistance Question}                                 Yes

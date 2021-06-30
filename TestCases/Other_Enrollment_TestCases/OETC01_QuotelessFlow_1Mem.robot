@@ -14,13 +14,13 @@ Verify Multi City Quoteless flow for a 1 member Household
     Set Selenium Implicit Wait  10s
 
 OETC01.1 Environment Accessibility
-    Start TestCase Execution
+    Start Test Execution
 
 OETC01.2 Environment Login
     Perform Userlogin
 
 OETC01.3 Start Quoteless Flow
-    Navigate to Access Marketplace to initiate a Quoteless Flow
+    Navigate to Access Marketplace
 
 OETC01.4 Customer Record Search
     Search Customer record in CMS via Find ACA Application
