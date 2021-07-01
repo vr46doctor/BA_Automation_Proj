@@ -6,6 +6,8 @@ Resource  ../Resources/IndividualPages/EDE_Pathway/01_FindACA.robot
 Resource  ../Resources/IndividualPages/EDE_Pathway/02_PrivacyPage.robot
 Resource  ../Resources/IndividualPages/EDE_Pathway/03_PCPage.robot
 Resource  ../Resources/IndividualPages/EDE_Pathway/04_ApplicantsPage.robot
+Resource  ../Resources/IndividualPages/EDE_Pathway/05_TaxPage.robot
+
 
 *** Test Cases ***
 Verify Multi City Quoteless flow for a 1 member Household
@@ -34,7 +36,11 @@ OETC01.6 Provide Attestation
 OETC01.7 Primary Contact Page Information
     Verify that Customer Information provided in Find ACA page is populated in PC Page
     Enter Primary Contact details
-    Health coverage Question for Primary Applicant
 
+OETC01.8 Provide answers relevant to the Applicant
+    Answer Applicant relevant Questions
+
+OETC01.9 Provide answers to the Tax Household questions
+    Answer the Tax related Questions - Marital Status, Tax Filing, Dependents
 
 
