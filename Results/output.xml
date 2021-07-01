@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.2 (Python 3.8.8 on win32)" generated="20210701 21:56:37.878" rpa="false" schemaversion="2">
+<suite id="s1" name="OETC01 QuotelessFlow 1Mem" source="C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\TestCases\Other_Enrollment_TestCases\OETC01_QuotelessFlow_1Mem.robot">
+<test id="s1-t1" name="Verify Multi City Quoteless flow for a 1 member Household">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<arg>10s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210701 21:56:38.138" endtime="20210701 21:56:38.139"/>
+</kw>
+<doc>This test case verifies the Multi City Quoteless flow for a 1 member Household</doc>
+<tag>Mainstream</tag>
+<status status="PASS" starttime="20210701 21:56:38.138" endtime="20210701 21:56:38.139"/>
+</test>
+<test id="s1-t2" name="OETC01.1 Environment Accessibility">
+<kw name="Start Test Execution" library="00_LoginPage">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${Test_URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210701 21:56:38.141" level="INFO">Opening browser 'chrome' to base url 'https://shop-qa.benefitalign.com/brokerengage/benefitalign/home/login'.</msg>
+<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.073"/>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20210701 21:56:47.073" endtime="20210701 21:56:47.194"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.194"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.197"/>
+</test>
+<test id="s1-t3" name="OETC01.2 Environment Login">
+<kw name="Perform Userlogin" library="00_LoginPage">
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Username}</arg>
+<arg>${Login_Username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:47.199" level="INFO">Typing text 'edeagency1' into text field 'id:Item2_UserName'.</msg>
+<status status="PASS" starttime="20210701 21:56:47.199" endtime="20210701 21:56:47.299"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>${Password}</arg>
+<arg>${Login_Password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:47.300" level="INFO">Typing text 'Test1234' into text field 'id:Item2_Password'.</msg>
+<status status="PASS" starttime="20210701 21:56:47.300" endtime="20210701 21:56:47.407"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>SignIn</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:47.407" level="INFO">Clicking element 'SignIn'.</msg>
+<status status="PASS" starttime="20210701 21:56:47.407" endtime="20210701 21:56:51.871"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:47.198" endtime="20210701 21:56:51.871"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:47.198" endtime="20210701 21:56:51.874"/>
+</test>
+<test id="s1-t4" name="OETC01.3 Start Quoteless Flow">
+<kw name="Navigate to Access Marketplace" library="01_TopMenuBar">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210701 21:56:51.880" endtime="20210701 21:56:51.881"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<arg>${Access Marketplace}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20210701 21:56:51.882" endtime="20210701 21:56:51.897"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Access Marketplace}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:51.897" level="INFO">Clicking element '//a[@href='/brokerengage/benefitalign/broker/findacaapplication']'.</msg>
+<status status="PASS" starttime="20210701 21:56:51.897" endtime="20210701 21:56:56.028"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:51.879" endtime="20210701 21:56:56.029"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:51.878" endtime="20210701 21:56:56.031"/>
+</test>
+<test id="s1-t5" name="OETC01.4 Customer Record Search">
+<kw name="Search Customer record in CMS via Find ACA Application" library="01_FindACA">
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${FindACA_FirstName}</arg>
+<arg>${Input_Customer FirstName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:56:56.036" level="INFO">Sending key(s) ('GeorgeQA',) to //input[@id='FirstName'] element.</msg>
+<msg timestamp="20210701 21:56:56.416" level="INFO">Sending keys GeorgeQA</msg>
+<status status="PASS" starttime="20210701 21:56:56.035" endtime="20210701 21:56:56.465"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${FindACA_LastName}</arg>
+<arg>${Input_Customer LastName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:56:56.466" level="INFO">Sending key(s) ('JulyOne',) to //input[@id='LastName'] element.</msg>
+<msg timestamp="20210701 21:56:56.798" level="INFO">Sending keys JulyOne</msg>
+<status status="PASS" starttime="20210701 21:56:56.465" endtime="20210701 21:56:56.833"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${FindACA_DOB}</arg>
+<arg>${Input_Customer DOB}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:56:56.834" level="INFO">Sending key(s) ('01/01/1982',) to //input[@id='DateOfBirth'] element.</msg>
+<msg timestamp="20210701 21:56:57.205" level="INFO">Sending keys 01/01/1982</msg>
+<status status="PASS" starttime="20210701 21:56:56.833" endtime="20210701 21:56:57.261"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_Enrollment State}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:57.261" level="INFO">Clicking element '(//form[@id='findACAApplicationForm']//*[contains(@class,'dropdown')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:56:57.261" endtime="20210701 21:56:57.361"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(text(),'${Input_Enrolling State}')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:57.361" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:56:57.361" endtime="20210701 21:56:57.415"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_Agent Attestation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:57.415" level="INFO">Clicking element '(//span[contains(@class,'textcontent')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:56:57.415" endtime="20210701 21:56:57.477"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_Customer Search}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:57.477" level="INFO">Clicking element '//a[@id='Id_SearchbyName']'.</msg>
+<status status="PASS" starttime="20210701 21:56:57.477" endtime="20210701 21:56:57.566"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:56.035" endtime="20210701 21:56:57.566"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:56.034" endtime="20210701 21:56:57.567"/>
+</test>
+<test id="s1-t6" name="OETC01.5 Create New Application">
+<kw name="Create a New Application for the Customer" library="01_FindACA">
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210701 21:56:57.571" endtime="20210701 21:56:57.572"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${FindACA_Create New Application}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210701 21:56:57.572" endtime="20210701 21:56:58.772"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_Create New Application}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:58.772" level="INFO">Clicking element '(//a[contains(.,'Create New Application')])[2]'.</msg>
+<status status="PASS" starttime="20210701 21:56:58.772" endtime="20210701 21:56:59.401"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_New Application Coverage Year}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:59.402" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:56:59.401" endtime="20210701 21:56:59.457"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//span[text()='${Input_Coverage Year}']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:59.458" level="INFO">Clicking element '//span[text()='2021']'.</msg>
+<status status="PASS" starttime="20210701 21:56:59.458" endtime="20210701 21:56:59.508"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_New Application Coverage State}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:59.508" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[2]'.</msg>
+<status status="PASS" starttime="20210701 21:56:59.508" endtime="20210701 21:56:59.634"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(text(),'${Input_Enrolling State}')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:59.634" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[2]'.</msg>
+<status status="PASS" starttime="20210701 21:56:59.634" endtime="20210701 21:56:59.721"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${FindACA_Confirm New Application Creation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:56:59.722" level="INFO">Clicking element '//a[@href='#!'][contains(.,'Create')]'.</msg>
+<status status="PASS" starttime="20210701 21:56:59.722" endtime="20210701 21:57:05.310"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:57.570" endtime="20210701 21:57:05.310"/>
+</kw>
+<status status="PASS" starttime="20210701 21:56:57.569" endtime="20210701 21:57:05.311"/>
+</test>
+<test id="s1-t7" name="OETC01.6 Provide Attestation">
+<kw name="Provide Attestation in Privacy Page to confirm application flow in EDE Pathway" library="02_PrivacyPage">
+<kw name="Page Should Contain" library="Selenium2Library">
+<arg>Privacy Statement</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210701 21:57:05.327" level="INFO">Current page contains text 'Privacy Statement'.</msg>
+<status status="PASS" starttime="20210701 21:57:05.313" endtime="20210701 21:57:05.327"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Privacy Page_Agent Attestation Checkbox 1}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:05.328" level="INFO">Clicking element '//span[contains(text(),"I agree to have my information used and retrieved ")]'.</msg>
+<status status="PASS" starttime="20210701 21:57:05.327" endtime="20210701 21:57:05.388"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Privacy Page_Agent Attestation Checkbox 2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:05.388" level="INFO">Clicking element '//span[contains(text(),"I understand that I'm required to provide true ans")]'.</msg>
+<status status="PASS" starttime="20210701 21:57:05.388" endtime="20210701 21:57:05.440"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Privacy Page_Agent Attestation Checkbox 3}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:05.441" level="INFO">Clicking element '//span[contains(text(),'I allow Benefitalign to access my application to h')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:05.441" endtime="20210701 21:57:05.506"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Privacy Page_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:05.507" level="INFO">Clicking element '//a[contains(@id,'privacyNext')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:05.507" endtime="20210701 21:57:09.845"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:05.313" endtime="20210701 21:57:09.845"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:05.312" endtime="20210701 21:57:09.846"/>
+</test>
+<test id="s1-t8" name="OETC01.7 Primary Contact Page Information">
+<kw name="Verify that Customer Information provided in Find ACA page is populated in PC Page" library="03_PCPage">
+<kw name="Page Should Contain" library="Selenium2Library">
+<arg>Your Information</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<msg timestamp="20210701 21:57:09.864" level="INFO">Current page contains text 'Your Information'.</msg>
+<status status="PASS" starttime="20210701 21:57:09.849" endtime="20210701 21:57:09.864"/>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<arg>${PCP_Customer FirstName}</arg>
+<arg>${Input_Customer FirstName}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20210701 21:57:09.890" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_FirstName')]' is 'GeorgeQA'.</msg>
+<status status="PASS" starttime="20210701 21:57:09.864" endtime="20210701 21:57:09.890"/>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<arg>${PCP_Customer LastName}</arg>
+<arg>${Input_Customer LastName}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20210701 21:57:09.912" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_LastName')]' is 'JulyOne'.</msg>
+<status status="PASS" starttime="20210701 21:57:09.890" endtime="20210701 21:57:09.912"/>
+</kw>
+<kw name="Textfield Value Should Be" library="Selenium2Library">
+<arg>${PCP_Customer DOB}</arg>
+<arg>${Input_Customer DOB}</arg>
+<doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
+<msg timestamp="20210701 21:57:09.937" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_DateOfBirth')]' is '01/01/1982'.</msg>
+<status status="PASS" starttime="20210701 21:57:09.912" endtime="20210701 21:57:09.937"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:09.848" endtime="20210701 21:57:09.937"/>
+</kw>
+<kw name="Enter Primary Contact details" library="03_PCPage">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer Gender}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:09.938" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[2]'.</msg>
+<status status="PASS" starttime="20210701 21:57:09.937" endtime="20210701 21:57:10.047"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(.,'${Input_Customer Gender}')])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:10.048" level="INFO">Clicking element '(//span[contains(.,'M')])'.</msg>
+<status status="PASS" starttime="20210701 21:57:10.048" endtime="20210701 21:57:10.140"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${PCP_Customer Email}</arg>
+<arg>${Input_Customer Email}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:57:10.141" level="INFO">Sending key(s) ('',) to //input[@id='Email'] element.</msg>
+<status status="PASS" starttime="20210701 21:57:10.140" endtime="20210701 21:57:10.529"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${PCP_Customer Phone}</arg>
+<arg>${Input_Customer Phone}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:57:10.530" level="INFO">Sending key(s) ('5554446633',) to //input[contains(@id,'PhoneNumberOne')] element.</msg>
+<msg timestamp="20210701 21:57:10.868" level="INFO">Sending keys 5554446633</msg>
+<status status="PASS" starttime="20210701 21:57:10.529" endtime="20210701 21:57:10.943"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer PhoneType}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:10.943" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[4]'.</msg>
+<status status="PASS" starttime="20210701 21:57:10.943" endtime="20210701 21:57:11.003"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(.,'${Input_Customer PhoneType}')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.004" level="INFO">Clicking element '(//span[contains(.,'Home')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.003" endtime="20210701 21:57:11.052"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>//span[contains(.,'${Input_Communication Mode}')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.052" level="INFO">Clicking element '//span[contains(.,'Send me paper notices in the mail')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.052" endtime="20210701 21:57:11.117"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer Written Language}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.117" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[7]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.117" endtime="20210701 21:57:11.180"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(.,'${Input_Customer Written Language}')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.180" level="INFO">Clicking element '(//span[contains(.,'English')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.180" endtime="20210701 21:57:11.232"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer Spoken Language}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.232" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[8]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.232" endtime="20210701 21:57:11.294"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(.,'${Input_Customer Spoken Language}')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:11.294" level="INFO">Clicking element '(//span[contains(.,'English')])[2]'.</msg>
+<status status="PASS" starttime="20210701 21:57:11.294" endtime="20210701 21:57:11.363"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${PCP_Customer Home Address}</arg>
+<arg>${Input_Customer Home Address}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:57:11.364" level="INFO">Sending key(s) ('GeorgeQA Mansion',) to //input[contains(@id,'Address_HomeAddress_AddressLine1')] element.</msg>
+<msg timestamp="20210701 21:57:11.688" level="INFO">Sending keys GeorgeQA Mansion</msg>
+<status status="PASS" starttime="20210701 21:57:11.363" endtime="20210701 21:57:11.776"/>
+</kw>
+<kw name="Press Keys" library="Selenium2Library">
+<arg>${PCP_Customer Home Address Zipcode}</arg>
+<arg>${Input_Customer Home Address Zipcode}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210701 21:57:11.776" level="INFO">Sending key(s) ('33325',) to //input[contains(@id,'Address_HomeAddress_Zip')] element.</msg>
+<msg timestamp="20210701 21:57:12.101" level="INFO">Sending keys 33325</msg>
+<status status="PASS" starttime="20210701 21:57:11.776" endtime="20210701 21:57:12.134"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210701 21:57:12.134" endtime="20210701 21:57:12.136"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer Home Address County}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:12.137" level="INFO">Clicking element '//input[contains(@id,'Address_HomeAddress_County')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:12.136" endtime="20210701 21:57:13.044"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Customer Home Address City}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:13.045" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[9]'.</msg>
+<status status="PASS" starttime="20210701 21:57:13.044" endtime="20210701 21:57:13.110"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>(//span[contains(text(),'${Input_Customer Home Address City}')])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:13.111" level="INFO">Clicking element '(//span[contains(text(),'Fort Lauderdale')])'.</msg>
+<status status="PASS" starttime="20210701 21:57:13.110" endtime="20210701 21:57:13.202"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Is mailing address same as home address?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:13.203" level="INFO">Clicking element '//div[contains(@class,'ismailhomesame')]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:13.203" endtime="20210701 21:57:13.337"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${PCP_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:13.337" level="INFO">Clicking element '//a[contains(@id,'PrimaryContactNext')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:13.337" endtime="20210701 21:57:19.774"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:09.937" endtime="20210701 21:57:19.775"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:09.848" endtime="20210701 21:57:19.776"/>
+</test>
+<test id="s1-t9" name="OETC01.8 Provide answers relevant to the Applicant">
+<kw name="Answer Applicant relevant Questions" library="04_ApplicantsPage">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Applicants_Does Primary Contact need health Coverage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:19.779" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[1]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:19.779" endtime="20210701 21:57:19.845"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Applicants_Do you need Financial Assistance}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:19.845" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[2]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:19.845" endtime="20210701 21:57:19.977"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210701 21:57:19.977" endtime="20210701 21:57:19.979"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${Applicants_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:19.980" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:19.979" endtime="20210701 21:57:24.556"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:19.779" endtime="20210701 21:57:24.556"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:19.778" endtime="20210701 21:57:24.557"/>
+</test>
+<test id="s1-t10" name="OETC01.9 Provide answers to the Tax Household questions">
+<kw name="Answer the Tax related Questions - Marital Status, Tax Filing, Dependents" library="05_TaxPage">
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TaxPage_Applicant Marital Question}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:24.561" level="INFO">Clicking element '//form//span[contains(.,'Single')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:24.560" endtime="20210701 21:57:24.627"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TaxPage_Is Applicant filing Tax}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:24.628" level="INFO">Clicking element '//form//div[@id='singleFiling']//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:24.627" endtime="20210701 21:57:24.680"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TaxPage_Is Applicant claiming any Dependents}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:24.681" level="INFO">Clicking element '//form//*[@id='ClaimingAsDependentsdiv']//span[contains(.,'No')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:24.680" endtime="20210701 21:57:24.819"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TaxPage_Is Applicant being claimed as a dependent}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:24.820" level="INFO">Clicking element '(//form//*[@id='ClaimedasDependentsdiv']//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210701 21:57:24.819" endtime="20210701 21:57:24.876"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${TaxPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210701 21:57:24.877" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210701 21:57:24.876" endtime="20210701 21:57:34.828"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:24.560" endtime="20210701 21:57:34.828"/>
+</kw>
+<status status="PASS" starttime="20210701 21:57:24.558" endtime="20210701 21:57:34.829"/>
+</test>
+<status status="PASS" starttime="20210701 21:56:37.880" endtime="20210701 21:57:34.831"/>
+</suite>
+<statistics>
+<total>
+<stat pass="10" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Mainstream</stat>
+</tag>
+<suite>
+<stat pass="10" fail="0" skip="0" id="s1" name="OETC01 QuotelessFlow 1Mem">OETC01 QuotelessFlow 1Mem</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210701 21:56:38.079" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\00_LoginPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.087" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\01_TopMenuBar.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.097" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\01_FindACA.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.100" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\02_PrivacyPage.robot' on line 6: Setting 'Test Timeout' is not allowed in resource file.</msg>
+<msg timestamp="20210701 21:56:38.106" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\02_PrivacyPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.110" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\03_PCPage.robot' on line 6: Setting 'Test Timeout' is not allowed in resource file.</msg>
+<msg timestamp="20210701 21:56:38.116" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\03_PCPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.124" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\04_ApplicantsPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.131" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\05_TaxPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
+Traceback (most recent call last):
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
+    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
+  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
+    from Selenium2Library.keywords import _ElementKeywords
+PYTHONPATH:
+  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
+  C:\Program Files\Python38\python38.zip
+  C:\Program Files\Python38\DLLs
+  C:\Program Files\Python38\lib
+  C:\Program Files\Python38
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
+  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
+<msg timestamp="20210701 21:56:38.135" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\01_TopMenuBar.robot' on line 12: Setting variable '${LOB_Quoting}' failed: Variable '${Input_LOB_Quoting}' not found.</msg>
+</errors>
+</robot>
