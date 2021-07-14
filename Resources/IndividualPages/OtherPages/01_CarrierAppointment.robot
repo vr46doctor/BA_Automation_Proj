@@ -1,7 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  Collections
-Library  ExtendedSelenium2Library
+#Library  ExtendedSelenium2Library
 Library  BuiltIn
 #Test Timeout  7s
 

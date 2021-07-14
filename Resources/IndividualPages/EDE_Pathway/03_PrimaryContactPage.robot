@@ -1,9 +1,8 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  Collections
-Library  ExtendedSelenium2Library
+#Library  ExtendedSelenium2Library
 Library  BuiltIn
-Test Timeout  7s
 
 *** Variables ***
 ######################################## Main Xpath ########################################
@@ -59,7 +58,7 @@ Enter Primary Contact details
 
     Press Keys              ${PCP_Customer Home Address}            ${Input_Customer Home Address}
     Press Keys              ${PCP_Customer Home Address Zipcode}    ${Input_Customer Home Address Zipcode}
-    Set Selenium Implicit Wait      5s
+#    Set Selenium Implicit Wait      5s
 
     Click Element           ${PCP_Customer Home Address County}
     Click Element           ${PCP_Customer Home Address City}
@@ -67,4 +66,5 @@ Enter Primary Contact details
     Click Element           (//span[contains(text(),'${Input_Customer Home Address City}')])
 
     Click Element           ${PCP_Is mailing address same as home address?}
+#    Set Selenium Implicit Wait      10s
     Click Element           ${PCP_Next Button}

@@ -1,7 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  Collections
-Library  ExtendedSelenium2Library
+#Library  ExtendedSelenium2Library
 Library  BuiltIn
 
 *** Variables ***
@@ -27,16 +27,21 @@ Search Customer record in CMS via Find ACA Application
     Press Keys              ${FindACA_LastName}     ${Input_Customer LastName}
     Press Keys              ${FindACA_DOB}          ${Input_Customer DOB}
     Click Element           ${FindACA_Enrollment State}
+#    Set Selenium Implicit Wait      5s
     Click Element           (//span[contains(text(),'${Input_Enrolling State}')])[1]
     Click Element           ${FindACA_Agent Attestation}
     Click Element           ${FindACA_Customer Search}
 
+    ${Customer_FullName}=  Catenate    ${Input_Customer FirstName} ${Input_Customer LastName}
+    Set Suite Variable	    ${Customer_FullName}
+
 Create a New Application for the Customer
-    Set Selenium Implicit Wait      5s
+#    Set Selenium Implicit Wait      5s
     Wait Until Element Is Visible       ${FindACA_Create New Application}
     Click Element           ${FindACA_Create New Application}
     Click Element           ${FindACA_New Application Coverage Year}
     Click Element           //span[text()='${Input_Coverage Year}']
+#    Set Selenium Implicit Wait      5s
     Click Element           ${FindACA_New Application Coverage State}
     Click Element           (//span[contains(text(),'${Input_Enrolling State}')])[2]
     Click Element           ${FindACA_Confirm New Application Creation}

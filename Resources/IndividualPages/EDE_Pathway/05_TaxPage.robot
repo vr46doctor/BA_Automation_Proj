@@ -1,7 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  Collections
-Library  ExtendedSelenium2Library
+#Library  ExtendedSelenium2Library
 Library  BuiltIn
 
 *** Variables ***
@@ -21,11 +21,12 @@ ${TaxPage_Next Button}                                      //a[contains(.,'Next
 
 *** Keywords ***
 Answer the Tax related Questions - Marital Status, Tax Filing, Dependents
+#    Page Should Contain             Tax Household - ${Input_Customer FirstName} ${Input_Customer LastName}
     Click Element       ${TaxPage_Applicant Marital Question}
 
     Click Element       ${TaxPage_Is Applicant filing Tax}
 
     Click Element       ${TaxPage_Is Applicant claiming any Dependents}
     Click Element       ${TaxPage_Is Applicant being claimed as a dependent}
-    Set Selenium Implicit Wait      5s
+#    Set Selenium Implicit Wait      10s
     Click Element       ${TaxPage_Next Button}

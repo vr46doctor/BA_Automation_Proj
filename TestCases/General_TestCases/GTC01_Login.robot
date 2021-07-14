@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  ../Resources/TestCase_Inputs/General_TestCases/INPUT_General_TestCases.robot      #specifying the Input file
 Resource  ../Resources/IndividualPages/Common/00_LoginPage.robot   ##specify the POM file
-
+Resource  ../Resources/IndividualPages/Common/01_TopMenuBar.robot
 
 *** Test Cases ***
 Verify Login function in BA ${Test_Environment} environment
@@ -10,4 +10,5 @@ Verify Login function in BA ${Test_Environment} environment
 
     Start Test Execution
     Perform Userlogin
-    Finish Test Execution
+    Perform Sign Out for a logged in a User
+#    Finish Test Execution

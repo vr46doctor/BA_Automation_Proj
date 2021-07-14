@@ -1,7 +1,7 @@
 *** Settings ***
-Library  Selenium2Library
+Library  SeleniumLibrary
 Library  Collections
-Library  ExtendedSelenium2Library
+#Library  ExtendedSelenium2Library
 Library  BuiltIn
 
 *** Variables ***
@@ -24,8 +24,9 @@ ${Applicants_Next Button}                               //a[contains(.,'Next')]
 
 *** Keywords ***
 Answer Applicant relevant Questions
+#    Page Should Contain             Applicants - Who's Applying
     Click Element       ${Applicants_Does Primary Contact need health Coverage}
     Click Element       ${Applicants_Do you need Financial Assistance}
-    Set Selenium Implicit Wait      5s
+#    Set Selenium Implicit Wait      10s
 
     Click Element       ${Applicants_Next Button}

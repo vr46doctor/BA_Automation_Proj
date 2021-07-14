@@ -1,572 +1,856 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.0.2 (Python 3.8.8 on win32)" generated="20210701 21:56:37.878" rpa="false" schemaversion="2">
+<robot generator="Robot 4.0.2 (Python 3.8.8 on win32)" generated="20210714 11:43:35.314" rpa="false" schemaversion="2">
 <suite id="s1" name="OETC01 QuotelessFlow 1Mem" source="C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\TestCases\Other_Enrollment_TestCases\OETC01_QuotelessFlow_1Mem.robot">
 <test id="s1-t1" name="Verify Multi City Quoteless flow for a 1 member Household">
-<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
+<kw name="Set Selenium Speed" library="SeleniumLibrary">
+<arg>0.25s</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" starttime="20210714 11:43:35.595" endtime="20210714 11:43:35.596"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>10s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210701 21:56:38.138" endtime="20210701 21:56:38.139"/>
+<status status="PASS" starttime="20210714 11:43:35.596" endtime="20210714 11:43:35.597"/>
 </kw>
 <doc>This test case verifies the Multi City Quoteless flow for a 1 member Household</doc>
 <tag>Mainstream</tag>
-<status status="PASS" starttime="20210701 21:56:38.138" endtime="20210701 21:56:38.139"/>
+<status status="PASS" starttime="20210714 11:43:35.594" endtime="20210714 11:43:35.597"/>
 </test>
 <test id="s1-t2" name="OETC01.1 Environment Accessibility">
 <kw name="Start Test Execution" library="00_LoginPage">
-<kw name="Open Browser" library="Selenium2Library">
+<kw name="Open Browser" library="SeleniumLibrary">
 <arg>${Test_URL}</arg>
 <arg>${BROWSER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20210701 21:56:38.141" level="INFO">Opening browser 'chrome' to base url 'https://shop-qa.benefitalign.com/brokerengage/benefitalign/home/login'.</msg>
-<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.073"/>
+<msg timestamp="20210714 11:43:35.599" level="INFO">Opening browser 'chrome' to base url 'https://shop-qa.benefitalign.com/brokerengage/benefitalign/home/login'.</msg>
+<status status="PASS" starttime="20210714 11:43:35.599" endtime="20210714 11:43:48.929"/>
 </kw>
-<kw name="Maximize Browser Window" library="Selenium2Library">
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20210701 21:56:47.073" endtime="20210701 21:56:47.194"/>
+<status status="PASS" starttime="20210714 11:43:48.930" endtime="20210714 11:43:49.316"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.194"/>
+<kw name="Set Browser Implicit Wait" library="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20210714 11:43:49.316" endtime="20210714 11:43:49.583"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:38.140" endtime="20210701 21:56:47.197"/>
+<status status="PASS" starttime="20210714 11:43:35.599" endtime="20210714 11:43:49.585"/>
+</kw>
+<status status="PASS" starttime="20210714 11:43:35.599" endtime="20210714 11:43:49.588"/>
 </test>
 <test id="s1-t3" name="OETC01.2 Environment Login">
 <kw name="Perform Userlogin" library="00_LoginPage">
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <arg>${Username}</arg>
 <arg>${Login_Username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:47.199" level="INFO">Typing text 'edeagency1' into text field 'id:Item2_UserName'.</msg>
-<status status="PASS" starttime="20210701 21:56:47.199" endtime="20210701 21:56:47.299"/>
+<msg timestamp="20210714 11:43:49.597" level="INFO">Typing text 'edeagency1' into text field 'id:Item2_UserName'.</msg>
+<status status="PASS" starttime="20210714 11:43:49.596" endtime="20210714 11:43:50.499"/>
 </kw>
-<kw name="Input Text" library="Selenium2Library">
+<kw name="Input Text" library="SeleniumLibrary">
 <arg>${Password}</arg>
 <arg>${Login_Password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:47.300" level="INFO">Typing text 'Test1234' into text field 'id:Item2_Password'.</msg>
-<status status="PASS" starttime="20210701 21:56:47.300" endtime="20210701 21:56:47.407"/>
+<msg timestamp="20210714 11:43:50.501" level="INFO">Typing text 'Test1234' into text field 'id:Item2_Password'.</msg>
+<status status="PASS" starttime="20210714 11:43:50.500" endtime="20210714 11:43:51.409"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>SignIn</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:47.407" level="INFO">Clicking element 'SignIn'.</msg>
-<status status="PASS" starttime="20210701 21:56:47.407" endtime="20210701 21:56:51.871"/>
+<msg timestamp="20210714 11:43:51.411" level="INFO">Clicking element 'SignIn'.</msg>
+<status status="PASS" starttime="20210714 11:43:51.410" endtime="20210714 11:43:57.977"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:47.198" endtime="20210701 21:56:51.871"/>
+<status status="PASS" starttime="20210714 11:43:49.594" endtime="20210714 11:43:57.978"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:47.198" endtime="20210701 21:56:51.874"/>
+<status status="PASS" starttime="20210714 11:43:49.592" endtime="20210714 11:43:57.980"/>
 </test>
 <test id="s1-t4" name="OETC01.3 Start Quoteless Flow">
 <kw name="Navigate to Access Marketplace" library="01_TopMenuBar">
-<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
-<arg>5s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210701 21:56:51.880" endtime="20210701 21:56:51.881"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="Selenium2Library">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
 <arg>${Access Marketplace}</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20210701 21:56:51.882" endtime="20210701 21:56:51.897"/>
+<status status="PASS" starttime="20210714 11:43:57.986" endtime="20210714 11:43:58.254"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Access Marketplace}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:51.897" level="INFO">Clicking element '//a[@href='/brokerengage/benefitalign/broker/findacaapplication']'.</msg>
-<status status="PASS" starttime="20210701 21:56:51.897" endtime="20210701 21:56:56.028"/>
+<msg timestamp="20210714 11:43:58.255" level="INFO">Clicking element '//a[@href='/brokerengage/benefitalign/broker/findacaapplication']'.</msg>
+<status status="PASS" starttime="20210714 11:43:58.254" endtime="20210714 11:44:03.725"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:51.879" endtime="20210701 21:56:56.029"/>
+<status status="PASS" starttime="20210714 11:43:57.985" endtime="20210714 11:44:03.726"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:51.878" endtime="20210701 21:56:56.031"/>
+<status status="PASS" starttime="20210714 11:43:57.985" endtime="20210714 11:44:03.728"/>
 </test>
 <test id="s1-t5" name="OETC01.4 Customer Record Search">
 <kw name="Search Customer record in CMS via Find ACA Application" library="01_FindACA">
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${FindACA_FirstName}</arg>
 <arg>${Input_Customer FirstName}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:56:56.036" level="INFO">Sending key(s) ('GeorgeQA',) to //input[@id='FirstName'] element.</msg>
-<msg timestamp="20210701 21:56:56.416" level="INFO">Sending keys GeorgeQA</msg>
-<status status="PASS" starttime="20210701 21:56:56.035" endtime="20210701 21:56:56.465"/>
+<msg timestamp="20210714 11:44:03.735" level="INFO">Sending key(s) ('Richardson',) to //input[@id='FirstName'] element.</msg>
+<msg timestamp="20210714 11:44:04.614" level="INFO">Sending keys Richardson</msg>
+<status status="PASS" starttime="20210714 11:44:03.734" endtime="20210714 11:44:04.926"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${FindACA_LastName}</arg>
 <arg>${Input_Customer LastName}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:56:56.466" level="INFO">Sending key(s) ('JulyOne',) to //input[@id='LastName'] element.</msg>
-<msg timestamp="20210701 21:56:56.798" level="INFO">Sending keys JulyOne</msg>
-<status status="PASS" starttime="20210701 21:56:56.465" endtime="20210701 21:56:56.833"/>
+<msg timestamp="20210714 11:44:04.929" level="INFO">Sending key(s) ('JulyFourteen',) to //input[@id='LastName'] element.</msg>
+<msg timestamp="20210714 11:44:05.798" level="INFO">Sending keys JulyFourteen</msg>
+<status status="PASS" starttime="20210714 11:44:04.927" endtime="20210714 11:44:06.104"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${FindACA_DOB}</arg>
 <arg>${Input_Customer DOB}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:56:56.834" level="INFO">Sending key(s) ('01/01/1982',) to //input[@id='DateOfBirth'] element.</msg>
-<msg timestamp="20210701 21:56:57.205" level="INFO">Sending keys 01/01/1982</msg>
-<status status="PASS" starttime="20210701 21:56:56.833" endtime="20210701 21:56:57.261"/>
+<msg timestamp="20210714 11:44:06.107" level="INFO">Sending key(s) ('01/01/1985',) to //input[@id='DateOfBirth'] element.</msg>
+<msg timestamp="20210714 11:44:06.995" level="INFO">Sending keys 01/01/1985</msg>
+<status status="PASS" starttime="20210714 11:44:06.105" endtime="20210714 11:44:07.310"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_Enrollment State}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:57.261" level="INFO">Clicking element '(//form[@id='findACAApplicationForm']//*[contains(@class,'dropdown')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:56:57.261" endtime="20210701 21:56:57.361"/>
+<msg timestamp="20210714 11:44:07.310" level="INFO">Clicking element '(//form[@id='findACAApplicationForm']//*[contains(@class,'dropdown')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:07.310" endtime="20210714 11:44:07.933"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(text(),'${Input_Enrolling State}')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:57.361" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:56:57.361" endtime="20210701 21:56:57.415"/>
+<msg timestamp="20210714 11:44:07.935" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:07.934" endtime="20210714 11:44:08.527"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_Agent Attestation}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:57.415" level="INFO">Clicking element '(//span[contains(@class,'textcontent')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:56:57.415" endtime="20210701 21:56:57.477"/>
+<msg timestamp="20210714 11:44:08.527" level="INFO">Clicking element '(//span[contains(@class,'textcontent')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:08.527" endtime="20210714 11:44:09.133"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_Customer Search}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:57.477" level="INFO">Clicking element '//a[@id='Id_SearchbyName']'.</msg>
-<status status="PASS" starttime="20210701 21:56:57.477" endtime="20210701 21:56:57.566"/>
+<msg timestamp="20210714 11:44:09.134" level="INFO">Clicking element '//a[@id='Id_SearchbyName']'.</msg>
+<status status="PASS" starttime="20210714 11:44:09.133" endtime="20210714 11:44:09.770"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:56.035" endtime="20210701 21:56:57.566"/>
+<kw name="Catenate" library="BuiltIn">
+<var>${Customer_FullName}</var>
+<arg>${Input_Customer FirstName} ${Input_Customer LastName}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20210714 11:44:09.772" level="INFO">${Customer_FullName} = Richardson JulyFourteen</msg>
+<status status="PASS" starttime="20210714 11:44:09.771" endtime="20210714 11:44:09.773"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:56.034" endtime="20210701 21:56:57.567"/>
+<kw name="Set Suite Variable" library="BuiltIn">
+<arg>${Customer_FullName}</arg>
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<msg timestamp="20210714 11:44:09.775" level="INFO">${Customer_FullName} = Richardson JulyFourteen</msg>
+<status status="PASS" starttime="20210714 11:44:09.774" endtime="20210714 11:44:09.775"/>
+</kw>
+<status status="PASS" starttime="20210714 11:44:03.733" endtime="20210714 11:44:09.776"/>
+</kw>
+<status status="PASS" starttime="20210714 11:44:03.733" endtime="20210714 11:44:09.780"/>
 </test>
 <test id="s1-t6" name="OETC01.5 Create New Application">
 <kw name="Create a New Application for the Customer" library="01_FindACA">
-<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
-<arg>5s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210701 21:56:57.571" endtime="20210701 21:56:57.572"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${FindACA_Create New Application}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20210701 21:56:57.572" endtime="20210701 21:56:58.772"/>
+<status status="PASS" starttime="20210714 11:44:09.787" endtime="20210714 11:44:11.049"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_Create New Application}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:58.772" level="INFO">Clicking element '(//a[contains(.,'Create New Application')])[2]'.</msg>
-<status status="PASS" starttime="20210701 21:56:58.772" endtime="20210701 21:56:59.401"/>
+<msg timestamp="20210714 11:44:11.050" level="INFO">Clicking element '(//a[contains(.,'Create New Application')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:44:11.049" endtime="20210714 11:44:11.658"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_New Application Coverage Year}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:59.402" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:56:59.401" endtime="20210701 21:56:59.457"/>
+<msg timestamp="20210714 11:44:11.658" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:11.658" endtime="20210714 11:44:12.236"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[text()='${Input_Coverage Year}']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:59.458" level="INFO">Clicking element '//span[text()='2021']'.</msg>
-<status status="PASS" starttime="20210701 21:56:59.458" endtime="20210701 21:56:59.508"/>
+<msg timestamp="20210714 11:44:12.237" level="INFO">Clicking element '//span[text()='2021']'.</msg>
+<status status="PASS" starttime="20210714 11:44:12.236" endtime="20210714 11:44:12.829"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_New Application Coverage State}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:59.508" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[2]'.</msg>
-<status status="PASS" starttime="20210701 21:56:59.508" endtime="20210701 21:56:59.634"/>
+<msg timestamp="20210714 11:44:12.829" level="INFO">Clicking element '(//div[@id='CreateApplicationmodal1']//input[contains(@class,'select-dropdown')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:44:12.829" endtime="20210714 11:44:13.439"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(text(),'${Input_Enrolling State}')])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:59.634" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[2]'.</msg>
-<status status="PASS" starttime="20210701 21:56:59.634" endtime="20210701 21:56:59.721"/>
+<msg timestamp="20210714 11:44:13.441" level="INFO">Clicking element '(//span[contains(text(),'Florida')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:44:13.440" endtime="20210714 11:44:14.068"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${FindACA_Confirm New Application Creation}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:56:59.722" level="INFO">Clicking element '//a[@href='#!'][contains(.,'Create')]'.</msg>
-<status status="PASS" starttime="20210701 21:56:59.722" endtime="20210701 21:57:05.310"/>
+<msg timestamp="20210714 11:44:14.070" level="INFO">Clicking element '//a[@href='#!'][contains(.,'Create')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:14.069" endtime="20210714 11:44:20.832"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:57.570" endtime="20210701 21:57:05.310"/>
+<status status="PASS" starttime="20210714 11:44:09.786" endtime="20210714 11:44:20.832"/>
 </kw>
-<status status="PASS" starttime="20210701 21:56:57.569" endtime="20210701 21:57:05.311"/>
+<status status="PASS" starttime="20210714 11:44:09.783" endtime="20210714 11:44:20.836"/>
 </test>
 <test id="s1-t7" name="OETC01.6 Provide Attestation">
 <kw name="Provide Attestation in Privacy Page to confirm application flow in EDE Pathway" library="02_PrivacyPage">
-<kw name="Page Should Contain" library="Selenium2Library">
+<kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Privacy Statement</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210701 21:57:05.327" level="INFO">Current page contains text 'Privacy Statement'.</msg>
-<status status="PASS" starttime="20210701 21:57:05.313" endtime="20210701 21:57:05.327"/>
+<msg timestamp="20210714 11:44:21.384" level="INFO">Current page contains text 'Privacy Statement'.</msg>
+<status status="PASS" starttime="20210714 11:44:20.844" endtime="20210714 11:44:21.384"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Privacy Page_Agent Attestation Checkbox 1}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:05.328" level="INFO">Clicking element '//span[contains(text(),"I agree to have my information used and retrieved ")]'.</msg>
-<status status="PASS" starttime="20210701 21:57:05.327" endtime="20210701 21:57:05.388"/>
+<msg timestamp="20210714 11:44:21.386" level="INFO">Clicking element '//span[contains(text(),"I agree to have my information used and retrieved ")]'.</msg>
+<status status="PASS" starttime="20210714 11:44:21.385" endtime="20210714 11:44:21.980"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Privacy Page_Agent Attestation Checkbox 2}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:05.388" level="INFO">Clicking element '//span[contains(text(),"I understand that I'm required to provide true ans")]'.</msg>
-<status status="PASS" starttime="20210701 21:57:05.388" endtime="20210701 21:57:05.440"/>
+<msg timestamp="20210714 11:44:21.981" level="INFO">Clicking element '//span[contains(text(),"I understand that I'm required to provide true ans")]'.</msg>
+<status status="PASS" starttime="20210714 11:44:21.980" endtime="20210714 11:44:22.595"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Privacy Page_Agent Attestation Checkbox 3}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:05.441" level="INFO">Clicking element '//span[contains(text(),'I allow Benefitalign to access my application to h')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:05.441" endtime="20210701 21:57:05.506"/>
+<msg timestamp="20210714 11:44:22.596" level="INFO">Clicking element '//span[contains(text(),'I allow Benefitalign to access my application to h')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:22.595" endtime="20210714 11:44:23.201"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Privacy Page_Next Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:05.507" level="INFO">Clicking element '//a[contains(@id,'privacyNext')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:05.507" endtime="20210701 21:57:09.845"/>
+<msg timestamp="20210714 11:44:23.204" level="INFO">Clicking element '//a[contains(@id,'privacyNext')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:23.202" endtime="20210714 11:44:28.565"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:05.313" endtime="20210701 21:57:09.845"/>
+<status status="PASS" starttime="20210714 11:44:20.842" endtime="20210714 11:44:28.566"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:05.312" endtime="20210701 21:57:09.846"/>
+<status status="PASS" starttime="20210714 11:44:20.840" endtime="20210714 11:44:28.570"/>
 </test>
 <test id="s1-t8" name="OETC01.7 Primary Contact Page Information">
-<kw name="Verify that Customer Information provided in Find ACA page is populated in PC Page" library="03_PCPage">
-<kw name="Page Should Contain" library="Selenium2Library">
+<kw name="Verify that Customer Information provided in Find ACA page is populated in PC Page" library="03_PrimaryContactPage">
+<kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>Your Information</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20210701 21:57:09.864" level="INFO">Current page contains text 'Your Information'.</msg>
-<status status="PASS" starttime="20210701 21:57:09.849" endtime="20210701 21:57:09.864"/>
+<msg timestamp="20210714 11:44:29.111" level="INFO">Current page contains text 'Your Information'.</msg>
+<status status="PASS" starttime="20210714 11:44:28.578" endtime="20210714 11:44:29.111"/>
 </kw>
-<kw name="Textfield Value Should Be" library="Selenium2Library">
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
 <arg>${PCP_Customer FirstName}</arg>
 <arg>${Input_Customer FirstName}</arg>
 <doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20210701 21:57:09.890" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_FirstName')]' is 'GeorgeQA'.</msg>
-<status status="PASS" starttime="20210701 21:57:09.864" endtime="20210701 21:57:09.890"/>
+<msg timestamp="20210714 11:44:30.197" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_FirstName')]' is 'Richardson'.</msg>
+<status status="PASS" starttime="20210714 11:44:29.112" endtime="20210714 11:44:30.197"/>
 </kw>
-<kw name="Textfield Value Should Be" library="Selenium2Library">
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
 <arg>${PCP_Customer LastName}</arg>
 <arg>${Input_Customer LastName}</arg>
 <doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20210701 21:57:09.912" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_LastName')]' is 'JulyOne'.</msg>
-<status status="PASS" starttime="20210701 21:57:09.890" endtime="20210701 21:57:09.912"/>
+<msg timestamp="20210714 11:44:31.277" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_LastName')]' is 'JulyFourteen'.</msg>
+<status status="PASS" starttime="20210714 11:44:30.198" endtime="20210714 11:44:31.277"/>
 </kw>
-<kw name="Textfield Value Should Be" library="Selenium2Library">
+<kw name="Textfield Value Should Be" library="SeleniumLibrary">
 <arg>${PCP_Customer DOB}</arg>
 <arg>${Input_Customer DOB}</arg>
 <doc>Verifies text field ``locator`` has exactly text ``expected``.</doc>
-<msg timestamp="20210701 21:57:09.937" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_DateOfBirth')]' is '01/01/1982'.</msg>
-<status status="PASS" starttime="20210701 21:57:09.912" endtime="20210701 21:57:09.937"/>
+<msg timestamp="20210714 11:44:32.393" level="INFO">Content of text field '//form[@id='PrimaryContactForm']//input[contains(@id,'YourInformation_DateOfBirth')]' is '01/01/1985'.</msg>
+<status status="PASS" starttime="20210714 11:44:31.278" endtime="20210714 11:44:32.394"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:09.848" endtime="20210701 21:57:09.937"/>
+<status status="PASS" starttime="20210714 11:44:28.577" endtime="20210714 11:44:32.394"/>
 </kw>
-<kw name="Enter Primary Contact details" library="03_PCPage">
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Enter Primary Contact details" library="03_PrimaryContactPage">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer Gender}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:09.938" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[2]'.</msg>
-<status status="PASS" starttime="20210701 21:57:09.937" endtime="20210701 21:57:10.047"/>
+<msg timestamp="20210714 11:44:32.400" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:44:32.399" endtime="20210714 11:44:33.068"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'${Input_Customer Gender}')])</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:10.048" level="INFO">Clicking element '(//span[contains(.,'M')])'.</msg>
-<status status="PASS" starttime="20210701 21:57:10.048" endtime="20210701 21:57:10.140"/>
+<msg timestamp="20210714 11:44:33.068" level="INFO">Clicking element '(//span[contains(.,'M')])'.</msg>
+<status status="PASS" starttime="20210714 11:44:33.068" endtime="20210714 11:44:33.676"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${PCP_Customer Email}</arg>
 <arg>${Input_Customer Email}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:57:10.141" level="INFO">Sending key(s) ('',) to //input[@id='Email'] element.</msg>
-<status status="PASS" starttime="20210701 21:57:10.140" endtime="20210701 21:57:10.529"/>
+<msg timestamp="20210714 11:44:33.677" level="INFO">Sending key(s) ('',) to //input[@id='Email'] element.</msg>
+<status status="PASS" starttime="20210714 11:44:33.676" endtime="20210714 11:44:34.827"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${PCP_Customer Phone}</arg>
 <arg>${Input_Customer Phone}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:57:10.530" level="INFO">Sending key(s) ('5554446633',) to //input[contains(@id,'PhoneNumberOne')] element.</msg>
-<msg timestamp="20210701 21:57:10.868" level="INFO">Sending keys 5554446633</msg>
-<status status="PASS" starttime="20210701 21:57:10.529" endtime="20210701 21:57:10.943"/>
+<msg timestamp="20210714 11:44:34.830" level="INFO">Sending key(s) ('5554446633',) to //input[contains(@id,'PhoneNumberOne')] element.</msg>
+<msg timestamp="20210714 11:44:35.688" level="INFO">Sending keys 5554446633</msg>
+<status status="PASS" starttime="20210714 11:44:34.828" endtime="20210714 11:44:36.034"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer PhoneType}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:10.943" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[4]'.</msg>
-<status status="PASS" starttime="20210701 21:57:10.943" endtime="20210701 21:57:11.003"/>
+<msg timestamp="20210714 11:44:36.036" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[4]'.</msg>
+<status status="PASS" starttime="20210714 11:44:36.035" endtime="20210714 11:44:36.631"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'${Input_Customer PhoneType}')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.004" level="INFO">Clicking element '(//span[contains(.,'Home')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.003" endtime="20210701 21:57:11.052"/>
+<msg timestamp="20210714 11:44:36.632" level="INFO">Clicking element '(//span[contains(.,'Home')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:36.631" endtime="20210714 11:44:37.226"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>//span[contains(.,'${Input_Communication Mode}')]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.052" level="INFO">Clicking element '//span[contains(.,'Send me paper notices in the mail')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.052" endtime="20210701 21:57:11.117"/>
+<msg timestamp="20210714 11:44:37.228" level="INFO">Clicking element '//span[contains(.,'Send me paper notices in the mail')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:37.227" endtime="20210714 11:44:37.839"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer Written Language}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.117" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[7]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.117" endtime="20210701 21:57:11.180"/>
+<msg timestamp="20210714 11:44:37.841" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[7]'.</msg>
+<status status="PASS" starttime="20210714 11:44:37.840" endtime="20210714 11:44:38.449"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'${Input_Customer Written Language}')])[1]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.180" level="INFO">Clicking element '(//span[contains(.,'English')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.180" endtime="20210701 21:57:11.232"/>
+<msg timestamp="20210714 11:44:38.451" level="INFO">Clicking element '(//span[contains(.,'English')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:44:38.450" endtime="20210714 11:44:39.058"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer Spoken Language}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.232" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[8]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.232" endtime="20210701 21:57:11.294"/>
+<msg timestamp="20210714 11:44:39.059" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[8]'.</msg>
+<status status="PASS" starttime="20210714 11:44:39.059" endtime="20210714 11:44:39.686"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(.,'${Input_Customer Spoken Language}')])[2]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:11.294" level="INFO">Clicking element '(//span[contains(.,'English')])[2]'.</msg>
-<status status="PASS" starttime="20210701 21:57:11.294" endtime="20210701 21:57:11.363"/>
+<msg timestamp="20210714 11:44:39.688" level="INFO">Clicking element '(//span[contains(.,'English')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:44:39.687" endtime="20210714 11:44:40.300"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${PCP_Customer Home Address}</arg>
 <arg>${Input_Customer Home Address}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:57:11.364" level="INFO">Sending key(s) ('GeorgeQA Mansion',) to //input[contains(@id,'Address_HomeAddress_AddressLine1')] element.</msg>
-<msg timestamp="20210701 21:57:11.688" level="INFO">Sending keys GeorgeQA Mansion</msg>
-<status status="PASS" starttime="20210701 21:57:11.363" endtime="20210701 21:57:11.776"/>
+<msg timestamp="20210714 11:44:40.304" level="INFO">Sending key(s) ('Richardson Avenue Manor',) to //input[contains(@id,'Address_HomeAddress_AddressLine1')] element.</msg>
+<msg timestamp="20210714 11:44:41.152" level="INFO">Sending keys Richardson Avenue Manor</msg>
+<status status="PASS" starttime="20210714 11:44:40.301" endtime="20210714 11:44:41.545"/>
 </kw>
-<kw name="Press Keys" library="Selenium2Library">
+<kw name="Press Keys" library="SeleniumLibrary">
 <arg>${PCP_Customer Home Address Zipcode}</arg>
 <arg>${Input_Customer Home Address Zipcode}</arg>
 <doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
-<msg timestamp="20210701 21:57:11.776" level="INFO">Sending key(s) ('33325',) to //input[contains(@id,'Address_HomeAddress_Zip')] element.</msg>
-<msg timestamp="20210701 21:57:12.101" level="INFO">Sending keys 33325</msg>
-<status status="PASS" starttime="20210701 21:57:11.776" endtime="20210701 21:57:12.134"/>
+<msg timestamp="20210714 11:44:41.548" level="INFO">Sending key(s) ('33325',) to //input[contains(@id,'Address_HomeAddress_Zip')] element.</msg>
+<msg timestamp="20210714 11:44:42.397" level="INFO">Sending keys 33325</msg>
+<status status="PASS" starttime="20210714 11:44:41.546" endtime="20210714 11:44:42.714"/>
 </kw>
-<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
-<arg>5s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210701 21:57:12.134" endtime="20210701 21:57:12.136"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer Home Address County}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:12.137" level="INFO">Clicking element '//input[contains(@id,'Address_HomeAddress_County')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:12.136" endtime="20210701 21:57:13.044"/>
+<msg timestamp="20210714 11:44:42.716" level="INFO">Clicking element '//input[contains(@id,'Address_HomeAddress_County')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:42.715" endtime="20210714 11:44:44.128"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Customer Home Address City}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:13.045" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[9]'.</msg>
-<status status="PASS" starttime="20210701 21:57:13.044" endtime="20210701 21:57:13.110"/>
+<msg timestamp="20210714 11:44:44.131" level="INFO">Clicking element '(//form[@id='PrimaryContactForm']//input[contains(@class,'dropdown')])[9]'.</msg>
+<status status="PASS" starttime="20210714 11:44:44.129" endtime="20210714 11:44:44.800"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>(//span[contains(text(),'${Input_Customer Home Address City}')])</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:13.111" level="INFO">Clicking element '(//span[contains(text(),'Fort Lauderdale')])'.</msg>
-<status status="PASS" starttime="20210701 21:57:13.110" endtime="20210701 21:57:13.202"/>
+<msg timestamp="20210714 11:44:44.802" level="INFO">Clicking element '(//span[contains(text(),'Fort Lauderdale')])'.</msg>
+<status status="PASS" starttime="20210714 11:44:44.801" endtime="20210714 11:44:45.410"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Is mailing address same as home address?}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:13.203" level="INFO">Clicking element '//div[contains(@class,'ismailhomesame')]//span[contains(.,'Yes')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:13.203" endtime="20210701 21:57:13.337"/>
+<msg timestamp="20210714 11:44:45.413" level="INFO">Clicking element '//div[contains(@class,'ismailhomesame')]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:45.411" endtime="20210714 11:44:46.050"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${PCP_Next Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:13.337" level="INFO">Clicking element '//a[contains(@id,'PrimaryContactNext')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:13.337" endtime="20210701 21:57:19.774"/>
+<msg timestamp="20210714 11:44:46.051" level="INFO">Clicking element '//a[contains(@id,'PrimaryContactNext')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:46.050" endtime="20210714 11:44:54.893"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:09.937" endtime="20210701 21:57:19.775"/>
+<status status="PASS" starttime="20210714 11:44:32.397" endtime="20210714 11:44:54.894"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:09.848" endtime="20210701 21:57:19.776"/>
+<status status="PASS" starttime="20210714 11:44:28.577" endtime="20210714 11:44:54.897"/>
 </test>
 <test id="s1-t9" name="OETC01.8 Provide answers relevant to the Applicant">
 <kw name="Answer Applicant relevant Questions" library="04_ApplicantsPage">
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Applicants_Does Primary Contact need health Coverage}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:19.779" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[1]//span[contains(.,'Yes')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:19.779" endtime="20210701 21:57:19.845"/>
+<msg timestamp="20210714 11:44:54.906" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[1]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:54.905" endtime="20210714 11:44:55.567"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Applicants_Do you need Financial Assistance}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:19.845" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[2]//span[contains(.,'Yes')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:19.845" endtime="20210701 21:57:19.977"/>
+<msg timestamp="20210714 11:44:55.571" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[2]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:55.569" endtime="20210714 11:44:56.195"/>
 </kw>
-<kw name="Set Selenium Implicit Wait" library="Selenium2Library">
-<arg>5s</arg>
-<doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20210701 21:57:19.977" endtime="20210701 21:57:19.979"/>
-</kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${Applicants_Next Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:19.980" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:19.979" endtime="20210701 21:57:24.556"/>
+<msg timestamp="20210714 11:44:56.197" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:44:56.196" endtime="20210714 11:45:01.588"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:19.779" endtime="20210701 21:57:24.556"/>
+<status status="PASS" starttime="20210714 11:44:54.903" endtime="20210714 11:45:01.588"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:19.778" endtime="20210701 21:57:24.557"/>
+<status status="PASS" starttime="20210714 11:44:54.902" endtime="20210714 11:45:01.589"/>
 </test>
 <test id="s1-t10" name="OETC01.9 Provide answers to the Tax Household questions">
 <kw name="Answer the Tax related Questions - Marital Status, Tax Filing, Dependents" library="05_TaxPage">
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${TaxPage_Applicant Marital Question}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:24.561" level="INFO">Clicking element '//form//span[contains(.,'Single')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:24.560" endtime="20210701 21:57:24.627"/>
+<msg timestamp="20210714 11:45:01.592" level="INFO">Clicking element '//form//span[contains(.,'Single')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:01.592" endtime="20210714 11:45:02.197"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${TaxPage_Is Applicant filing Tax}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:24.628" level="INFO">Clicking element '//form//div[@id='singleFiling']//span[contains(.,'Yes')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:24.627" endtime="20210701 21:57:24.680"/>
+<msg timestamp="20210714 11:45:02.199" level="INFO">Clicking element '//form//div[@id='singleFiling']//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:02.198" endtime="20210714 11:45:02.823"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${TaxPage_Is Applicant claiming any Dependents}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:24.681" level="INFO">Clicking element '//form//*[@id='ClaimingAsDependentsdiv']//span[contains(.,'No')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:24.680" endtime="20210701 21:57:24.819"/>
+<msg timestamp="20210714 11:45:02.826" level="INFO">Clicking element '//form//*[@id='ClaimingAsDependentsdiv']//span[contains(.,'No')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:02.824" endtime="20210714 11:45:03.541"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${TaxPage_Is Applicant being claimed as a dependent}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:24.820" level="INFO">Clicking element '(//form//*[@id='ClaimedasDependentsdiv']//span[contains(.,'No')])[1]'.</msg>
-<status status="PASS" starttime="20210701 21:57:24.819" endtime="20210701 21:57:24.876"/>
+<msg timestamp="20210714 11:45:03.543" level="INFO">Clicking element '(//form//*[@id='ClaimedasDependentsdiv']//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:45:03.542" endtime="20210714 11:45:04.181"/>
 </kw>
-<kw name="Click Element" library="Selenium2Library">
+<kw name="Click Element" library="SeleniumLibrary">
 <arg>${TaxPage_Next Button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20210701 21:57:24.877" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
-<status status="PASS" starttime="20210701 21:57:24.876" endtime="20210701 21:57:34.828"/>
+<msg timestamp="20210714 11:45:04.183" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:04.182" endtime="20210714 11:45:10.310"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:24.560" endtime="20210701 21:57:34.828"/>
+<status status="PASS" starttime="20210714 11:45:01.591" endtime="20210714 11:45:10.310"/>
 </kw>
-<status status="PASS" starttime="20210701 21:57:24.558" endtime="20210701 21:57:34.829"/>
+<status status="PASS" starttime="20210714 11:45:01.591" endtime="20210714 11:45:10.311"/>
 </test>
-<status status="PASS" starttime="20210701 21:56:37.880" endtime="20210701 21:57:34.831"/>
+<test id="s1-t11" name="OETC01.10 Provide answers to the Parent/Caretaker Relationship questions">
+<kw name="Answer the Parent/Caretaker Questions" library="06_Parent_CaretakerPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PCRPage_Applicant Parent/Caretaker Question}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:10.314" level="INFO">Clicking element '(//form//div[contains(@class,'takencare')]//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:45:10.314" endtime="20210714 11:45:10.962"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${PCRPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:10.963" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:10.962" endtime="20210714 11:45:17.807"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:10.313" endtime="20210714 11:45:17.808"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:10.313" endtime="20210714 11:45:17.812"/>
+</test>
+<test id="s1-t12" name="OETC01.11 Provide answers to more about applicant household questions">
+<kw name="Answer the More About the Household Questions" library="07_MoreAbout_HouseholdPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MHHPage_Applicant not having a SSN Number}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:17.821" level="INFO">Clicking element '//span[contains(.,'Does not have a SSN')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:17.821" endtime="20210714 11:45:18.525"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MHHPage_Is Applicant a U.S. citizen or U.S. national?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:18.526" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[3]//span[contains(.,'Yes')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:18.525" endtime="20210714 11:45:19.138"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${MHHPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:19.138" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:19.138" endtime="20210714 11:45:26.893"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:17.821" endtime="20210714 11:45:26.894"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:17.820" endtime="20210714 11:45:26.898"/>
+</test>
+<test id="s1-t13" name="OETC01.12 Provide answers to Other Situations related to Applicant Household questions">
+<kw name="Answer the Other Situations related to Household Questions" library="08_Other_SituationsPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OSPage_Is Applicant a naturalized or derived citizen?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:26.907" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[1]//span[contains(.,'No')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:26.906" endtime="20210714 11:45:27.591"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OSPage_Do any of these situations apply to Applicant?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:27.592" level="INFO">Clicking element '(//form//div[@class='question_answer_strip_head'])[2]//span[contains(.,'No')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:27.591" endtime="20210714 11:45:28.215"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${OSPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:28.217" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:28.216" endtime="20210714 11:45:34.978"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:26.905" endtime="20210714 11:45:34.978"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:26.902" endtime="20210714 11:45:34.980"/>
+</test>
+<test id="s1-t14" name="OETC01.13 Provide answers to the Income &amp; Deducation related questions">
+<kw name="Answer the Income &amp; Deducation related Questions" library="09_Income_DeductionPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//form//*[contains(@class,'widget_box')]//span[contains(.,'${Customer_FullName}')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:34.985" level="INFO">Clicking element '(//form//*[contains(@class,'widget_box')]//span[contains(.,'Richardson JulyFourteen')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:45:34.984" endtime="20210714 11:45:35.692"/>
+</kw>
+<kw name="Applicant Income Type is Job, Frequency is Yearly" library="09_IncomeTypes">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Income Type}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210714 11:45:35.694" endtime="20210714 11:45:36.723"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Income Type}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:36.724" level="INFO">Clicking element '(//form[@id='incomepostform']//input[contains(@class,'dropdown')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:45:36.723" endtime="20210714 11:45:37.408"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//span[contains(.,'${Input_Customer Income Type}')])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:37.410" level="INFO">Clicking element '(//span[contains(.,'Job')])'.</msg>
+<status status="PASS" starttime="20210714 11:45:37.409" endtime="20210714 11:45:38.083"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Income Frequency}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<msg timestamp="20210714 11:45:38.401" level="INFO">Suppressing StaleElementReferenceException from Selenium.</msg>
+<status status="PASS" starttime="20210714 11:45:38.084" endtime="20210714 11:45:39.191"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Income Frequency}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:39.193" level="INFO">Clicking element '(//form[@id='incomepostform']//input[contains(@class,'dropdown')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:45:39.192" endtime="20210714 11:45:39.789"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//span[contains(.,'${Input_Customer Income Frequency}')])</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:39.790" level="INFO">Clicking element '(//span[contains(.,'Yearly')])'.</msg>
+<status status="PASS" starttime="20210714 11:45:39.789" endtime="20210714 11:45:40.387"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Income Amount}</arg>
+<arg>${Input_Customer Income Amount}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210714 11:45:40.390" level="INFO">Sending key(s) ('25000',) to //form[@id='incomepostform']//input[@id='Amount'] element.</msg>
+<msg timestamp="20210714 11:45:41.253" level="INFO">Sending keys 25000</msg>
+<status status="PASS" starttime="20210714 11:45:40.388" endtime="20210714 11:45:41.570"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Employer Name}</arg>
+<arg>${Input_Customer Employer Name}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210714 11:45:41.574" level="INFO">Sending key(s) ('ABC Corp',) to //form[@id='incomepostform']//input[@id='EmployerCompany'] element.</msg>
+<msg timestamp="20210714 11:45:42.402" level="INFO">Sending keys ABC Corp</msg>
+<status status="PASS" starttime="20210714 11:45:41.572" endtime="20210714 11:45:42.757"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${IDPage_Applicant Employer PhoneNumber}</arg>
+<arg>${Input_Customer Employer PhoneNumber}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210714 11:45:42.760" level="INFO">Sending key(s) ('4445556666',) to //form[@id='incomepostform']//input[@id='EmployerPhone'] element.</msg>
+<msg timestamp="20210714 11:45:43.729" level="INFO">Sending keys 4445556666</msg>
+<status status="PASS" starttime="20210714 11:45:42.758" endtime="20210714 11:45:44.119"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IDPage_Save Added Income}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:44.122" level="INFO">Clicking element '//a[contains(.,'Save')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:44.120" endtime="20210714 11:45:45.279"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:35.693" endtime="20210714 11:45:45.280"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${IDPage_Next Button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20210714 11:45:45.281" endtime="20210714 11:45:45.822"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IDPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:45.824" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:45.823" endtime="20210714 11:45:51.953"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:34.983" endtime="20210714 11:45:51.953"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:34.982" endtime="20210714 11:45:51.954"/>
+</test>
+<test id="s1-t15" name="OETC01.14 Confirm the Income Summary for the Household">
+<kw name="Answer the Income Summary related Questions" library="10_IncomeSummaryPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IncomeSummaryPage_Unemployment Compensation Question}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:51.957" level="INFO">Clicking element '//form//*[contains(@class,'widget_box')]//span[contains(.,'None of these people')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:51.957" endtime="20210714 11:45:52.687"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IncomeSummaryPage_Yearly Income Confirmation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:52.689" level="INFO">Clicking element '(//form//div[contains(@class,'income_seperation')]//span[contains(.,'Yes')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:45:52.688" endtime="20210714 11:45:53.296"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${IncomeSummaryPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:45:53.298" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:45:53.297" endtime="20210714 11:46:00.058"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:51.957" endtime="20210714 11:46:00.058"/>
+</kw>
+<status status="PASS" starttime="20210714 11:45:51.956" endtime="20210714 11:46:00.059"/>
+</test>
+<test id="s1-t16" name="OETC01.15 Confirm the Disabilities &amp; Medicaid Denial for the Household">
+<kw name="Answer the Disabilities &amp; Medicaid Denial Questions" library="11_Disabilities_DenialPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DDPage_Do any of these people have a physical disability or mental health condition}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:00.062" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')][1]//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:00.062" endtime="20210714 11:46:00.699"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DDPage_Do any of these people need help with daily activities}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:00.701" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')][2]//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:00.700" endtime="20210714 11:46:01.387"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DDPage_Were any of these people found not eligible for Medicaid or KidCare}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:01.390" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')][3]//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:01.388" endtime="20210714 11:46:01.983"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DDPage_Did any of these people have coverage that will end soon or that recently ended because of a change in eligibility}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:01.985" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')][4]//span[contains(.,'No')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:01.984" endtime="20210714 11:46:02.595"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${DDPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:02.597" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:02.596" endtime="20210714 11:46:09.347"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:00.062" endtime="20210714 11:46:09.348"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:00.061" endtime="20210714 11:46:09.350"/>
+</test>
+<test id="s1-t17" name="OETC01.16 Provide Answers to the Current Coverage Questions">
+<kw name="Answer the Current Coverage Questions" library="12_Current_CoveragePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CCPage_Are any of these people currently enrolled in health coverage?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:09.352" level="INFO">Clicking element '(//form//div[contains(@class,'widget_box')]//span[contains(.,'None of these people')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:09.352" endtime="20210714 11:46:10.020"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${CCPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:10.021" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:10.020" endtime="20210714 11:46:18.627"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:09.352" endtime="20210714 11:46:18.628"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:09.351" endtime="20210714 11:46:18.631"/>
+</test>
+<test id="s1-t18" name="OETC01.17 Provide Answers to the Employee Sponsored Coverage Questions">
+<kw name="Answer the Employee Sponsored Coverage Questions" library="13_Employee_CoveragePage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ESCPage_Will any of these people be offered health coverage through a job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:18.640" level="INFO">Clicking element '//form//div[contains(@class,'widget_content')]//span[contains(.,'None of these people')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:18.639" endtime="20210714 11:46:19.233"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ESCPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:19.235" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:19.234" endtime="20210714 11:46:27.078"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:18.637" endtime="20210714 11:46:27.079"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:18.635" endtime="20210714 11:46:27.080"/>
+</test>
+<test id="s1-t19" name="OETC01.18 Provide Answers to the Individual Coverage HRA Questions">
+<kw name="Answer the Individual Coverage HRA Questions" library="14_ICHRAPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ICHRAPage_Do any of these people have an individual coverage Health Reimbursement Arrangement (HRA) through their job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:27.084" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'None of these people')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:27.084" endtime="20210714 11:46:27.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ICHRAPage_Have any of these people been offered an individual coverage Health Reimbursement Arrangement (HRA) they haven't yet accepted through their job}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:27.766" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'None of these people')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:46:27.766" endtime="20210714 11:46:28.442"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${ICHRAPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:28.443" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:28.442" endtime="20210714 11:46:35.888"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:27.083" endtime="20210714 11:46:35.889"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:27.083" endtime="20210714 11:46:35.892"/>
+</test>
+<test id="s1-t20" name="OETC01.19 Provide Answers to the HRA (Qualified Small Employer Health Reimbursement Arrangement (QSEHRA)) Questions">
+<kw name="Answer the HRA (Qualified Small Employer Health Reimbursement Arrangement (QSEHRA)) Questions" library="15_HRAPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HRAPage_Have any of these people been offered an individual coverage HRA or Qualified Small Employer Health Reimbursement Arrangement (QSEHRA)}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:35.895" level="INFO">Clicking element '//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'None of these people')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:35.895" endtime="20210714 11:46:36.528"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${HRAPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:36.530" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:36.529" endtime="20210714 11:46:43.432"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:35.895" endtime="20210714 11:46:43.432"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:35.894" endtime="20210714 11:46:43.437"/>
+</test>
+<test id="s1-t21" name="OETC01.20 Provide Answers to the SEP (Recent Life Changes) Questions">
+<kw name="Answer the SEP (Recent Life Changes) Questions" library="16_SEPPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEPPage_Did any of these people lose qualifying health coverage in last 2 months}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:43.446" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'Yes')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:43.444" endtime="20210714 11:46:44.135"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'${Customer_FullName}')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:44.137" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'Richardson JulyFourteen')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:46:44.136" endtime="20210714 11:46:44.727"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${SEPPage_Past SEP Coverage Date}</arg>
+<arg>${Input_Past SEP Coverage Date}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210714 11:46:44.730" level="INFO">Sending key(s) ('06/15/2021',) to //input[@name='Members[0].DidLoseQHCMemberLastDateofCoverage'] element.</msg>
+<msg timestamp="20210714 11:46:45.573" level="INFO">Sending keys 06/15/2021</msg>
+<status status="PASS" starttime="20210714 11:46:44.729" endtime="20210714 11:46:45.903"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEPPage_Will any of these people lose qualifying health coverage in next 2 months}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:45.905" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'No')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:46:45.904" endtime="20210714 11:46:46.514"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEPPage_Select any of these life changes that are applicable and must have taken place within the last 60 days?}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:46.515" level="INFO">Clicking element '(//form//div[contains(@class,'question_answer_strip_wrap')]//span[contains(.,'None of these changes')])'.</msg>
+<status status="PASS" starttime="20210714 11:46:46.514" endtime="20210714 11:46:47.124"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${SEPPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:47.126" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:47.125" endtime="20210714 11:46:54.997"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:43.443" endtime="20210714 11:46:54.998"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:43.440" endtime="20210714 11:46:55.003"/>
+</test>
+<test id="s1-t22" name="OETC01.21 Proceed further after reviewing the data entered">
+<kw name="Proceed further from Final Review Page" library="17_FinalReviewPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${FinalReviewPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:46:55.013" level="INFO">Clicking element '//a[contains(.,'Next')]'.</msg>
+<status status="PASS" starttime="20210714 11:46:55.012" endtime="20210714 11:47:00.581"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:55.010" endtime="20210714 11:47:00.581"/>
+</kw>
+<status status="PASS" starttime="20210714 11:46:55.007" endtime="20210714 11:47:00.586"/>
+</test>
+<test id="s1-t23" name="OETC01.22 Provide all attestations in Sign &amp; Submit page and proceed to eligibility results">
+<kw name="Provide all the attestations in Sign &amp; Submit Page to obtain eligibility results" library="18_Sign_SubmitPage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Income Data attestation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:47:00.595" level="INFO">Clicking element '(//form//div[contains(@class,'widget_box')]//span[contains(.,'Agree')])[1]'.</msg>
+<status status="PASS" starttime="20210714 11:47:00.594" endtime="20210714 11:47:01.207"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Eligibility Data attestation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:47:01.209" level="INFO">Clicking element '(//form//div[contains(@class,'widget_box')]//span[contains(.,'Agree')])[2]'.</msg>
+<status status="PASS" starttime="20210714 11:47:01.208" endtime="20210714 11:47:01.831"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Terminate existing coverage if found eligibble for others attestation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:47:01.833" level="INFO">Clicking element '//form//div[contains(@class,'widget_box')]//span[contains(.,'I agree to allow the Marketplace to end the Marketplace coverage')]'.</msg>
+<status status="PASS" starttime="20210714 11:47:01.832" endtime="20210714 11:47:02.454"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Final attestation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:47:02.456" level="INFO">Clicking element '//form//div[contains(@class,'widget_box')]//span[contains(.,'I agree to this statement')]'.</msg>
+<status status="PASS" starttime="20210714 11:47:02.455" endtime="20210714 11:47:03.048"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Final Consumer Digital Sign}</arg>
+<arg>${Customer_FullName}</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20210714 11:47:03.049" level="INFO">Sending key(s) ('Richardson JulyFourteen',) to //input[contains(@id,'FullName')] element.</msg>
+<msg timestamp="20210714 11:47:03.928" level="INFO">Sending keys Richardson JulyFourteen</msg>
+<status status="PASS" starttime="20210714 11:47:03.048" endtime="20210714 11:47:04.275"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Sign&amp;SubmitPage_Next Button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210714 11:47:04.277" level="INFO">Clicking element '//a[contains(.,'Submit Application')]'.</msg>
+<status status="PASS" starttime="20210714 11:47:04.276" endtime="20210714 11:47:29.629"/>
+</kw>
+<status status="PASS" starttime="20210714 11:47:00.593" endtime="20210714 11:47:29.630"/>
+</kw>
+<status status="PASS" starttime="20210714 11:47:00.590" endtime="20210714 11:47:29.634"/>
+</test>
+<status status="PASS" starttime="20210714 11:43:35.317" endtime="20210714 11:47:29.641"/>
 </suite>
 <statistics>
 <total>
-<stat pass="10" fail="0" skip="0">All Tests</stat>
+<stat pass="23" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="1" fail="0" skip="0">Mainstream</stat>
 </tag>
 <suite>
-<stat pass="10" fail="0" skip="0" id="s1" name="OETC01 QuotelessFlow 1Mem">OETC01 QuotelessFlow 1Mem</stat>
+<stat pass="23" fail="0" skip="0" id="s1" name="OETC01 QuotelessFlow 1Mem">OETC01 QuotelessFlow 1Mem</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20210701 21:56:38.079" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\00_LoginPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.087" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\01_TopMenuBar.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.097" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\01_FindACA.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.100" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\02_PrivacyPage.robot' on line 6: Setting 'Test Timeout' is not allowed in resource file.</msg>
-<msg timestamp="20210701 21:56:38.106" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\02_PrivacyPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.110" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\03_PCPage.robot' on line 6: Setting 'Test Timeout' is not allowed in resource file.</msg>
-<msg timestamp="20210701 21:56:38.116" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\03_PCPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.124" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\04_ApplicantsPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.131" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\EDE_Pathway\05_TaxPage.robot' on line 4: Importing library 'ExtendedSelenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library.keywords'
-Traceback (most recent call last):
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\__init__.py", line 27, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\__init__.py", line 24, in &lt;module&gt;
-    from ExtendedSelenium2Library.keywords.extendedelement import ExtendedElementKeywords
-  File "c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages\ExtendedSelenium2Library\keywords\extendedelement.py", line 27, in &lt;module&gt;
-    from Selenium2Library.keywords import _ElementKeywords
-PYTHONPATH:
-  C:\Users\prem.joseph\PycharmProjects\BA_Automation_Proj\venv\Scripts\robot.exe
-  C:\Program Files\Python38\python38.zip
-  C:\Program Files\Python38\DLLs
-  C:\Program Files\Python38\lib
-  C:\Program Files\Python38
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv
-  c:\users\prem.joseph\pycharmprojects\ba_automation_proj\venv\lib\site-packages</msg>
-<msg timestamp="20210701 21:56:38.135" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\01_TopMenuBar.robot' on line 12: Setting variable '${LOB_Quoting}' failed: Variable '${Input_LOB_Quoting}' not found.</msg>
+<msg timestamp="20210714 11:43:35.589" level="ERROR">Error in file 'c:\users\prem.joseph\pycharmprojects\ba_automation_proj\Resources\IndividualPages\Common\01_TopMenuBar.robot' on line 12: Setting variable '${LOB_Quoting}' failed: Variable '${Input_LOB_Quoting}' not found.</msg>
 </errors>
 </robot>
